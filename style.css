@@ -1,0 +1,194 @@
+/* === Import Fonts / Red Hat Display === */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display";
+}
+
+button {
+  font-family: "Red Hat Display";
+  cursor: pointer;
+}
+
+.background-image {
+  display: none;
+}
+
+.background-svg {
+  width: 100%;
+}
+
+.card-container {
+  width: 100%;
+}
+
+.card {
+  margin: 0 auto;
+  width: 327px;
+  max-width: 100%;
+  height: 567px;
+
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* - Image - */
+.card-main-image {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 22px;
+  margin: 32px 32px 16px 32px;
+  color: #1f2e55;
+  font-size: 22px;
+}
+
+.card > p {
+  color: #717fa6;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0px 32px 24px 32px;
+}
+
+/* === Content Container === */
+.card-content_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 354px;
+  height: 98px;
+  border-radius: 11px;
+
+  background-color: #f7f9ff;
+}
+
+.card-content_container svg {
+  margin-left: -1rem;
+}
+
+.card-content_container div {
+  margin-left: -2rem;
+}
+
+.card-content_container div p {
+  margin: 0;
+  font-size: 16px;
+  color: #717fa6;
+  font-weight: 500;
+}
+
+.card-content_container div p:first-child {
+  color: #1f2e55;
+  font-weight: 900;
+}
+
+.card-content_container a {
+  color: #382ae1;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+.card-content_container a:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+
+/* === Button === */
+.payment {
+  width: 279px;
+  height: 50px;
+  border: none;
+  border-radius: 11px;
+  color: #ffffff;
+  background-color: #382ae1;
+
+  font-size: 15px;
+  font-weight: 900;
+  margin: 24px;
+
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  transition: 0.3s ease-in-out;
+}
+
+.payment:hover {
+  background-color: #766cf1;
+}
+
+.cancel {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+
+  font-size: 15px;
+  font-weight: 900;
+  color: #717fa6;
+
+  transition: 0.3s ease-in-out;
+}
+
+.cancel:hover {
+  color: #1f2e55;
+}
+
+/* === Breakpoints / Media Queries === */
+@media only screen and (min-width: 501px) {
+  .background-svg {
+    display: none;
+  }
+
+  .background-image {
+    background-image: url(/images/desktop.png);
+    background-repeat-y: no-repeat;
+    width: 100%;
+    height: 437px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+  }
+
+  .card-container {
+    position: absolute;
+    top: 10%;
+  }
+
+  .card {
+    width: 450px;
+    height: 697px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 45px 48px 0px 48px;
+  }
+
+  .card > p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 17px 48px 20px 48px;
+  }
+
+  .card-content_container {
+    margin: 0px 48px 32px 48px;
+  }
+
+  .payment {
+    width: 354px;
+    height: 50px;
+    margin: 0px 48px 32px 48px;
+  }
+}
