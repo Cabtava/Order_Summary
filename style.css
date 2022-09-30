@@ -69,8 +69,8 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
 
-  width: 354px;
-  height: 98px;
+  width: 279px;
+  height: 81px;
   border-radius: 11px;
 
   background-color: #f7f9ff;
@@ -183,6 +183,8 @@ h1 {
   }
 
   .card-content_container {
+    width: 354px;
+    height: 98px;
     margin: 0px 48px 32px 48px;
   }
 
